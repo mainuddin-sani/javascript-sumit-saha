@@ -12,10 +12,27 @@
     <p id="demo"></p>
     <button onclick="dateFunction()">see date</button>
 
+
+    <div class="images">
+        <button onclick="lightOff()">Light off</button>
+        <img id="images" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+        <button onclick="lightOn()">Light on</button>
+    </div>
+
     <script>
+        const lightOn = () => {
+            document.getElementById('images').src = 'https://www.w3schools.com/js/pic_bulbon.gif';
+            console.log()
+        }
+        const lightOff = () => {
+            document.getElementById('images').src = 'https://www.w3schools.com/js/pic_bulboff.gif';
+        }
+
         const dateFunction = ()=> {
             document.getElementById('demo').innerHTML = Date();
         }
     </script>
+
+    <script src="javascript-practice.js"></script>
 </body>
 </html>
